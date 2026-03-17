@@ -10,4 +10,13 @@ function suffle(array) {
 
 function createBoard() {
     gameBoard.innerHTML = "";
+
+    shuffle(cards).forEach(icon => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.textContent = icon;
+        card.dataset.icon = icon;
+        card.addEventListener("click", flipCard);
+        gameBoard.appendChild(card);
+    })
 }
