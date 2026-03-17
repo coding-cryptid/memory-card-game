@@ -1,4 +1,6 @@
 # 🧠 Memory Game
 
-# About This Build:
+## About This Build:
 💡 
+
+## Tech Stack:
