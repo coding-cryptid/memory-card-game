@@ -4,7 +4,7 @@ const restartBtn = document.getElementById("restart-btn");
 const icons = ["🧠", "☕️", "💻", "💡", "🩷", "🥡", "🍔", "🍟"];
 let cards = [...icons, ...icons];
 
-function suffle(array) {
+function shuffle(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
