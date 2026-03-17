@@ -1,4 +1,4 @@
-# 🧠 Memory Game
+# Memory Game 🧠
 
 ## About This Build:
 💡 In this project I created and manipulated DOM elements dynamically, used arrays and loops to shuffle and display data, and implemented event listeners to track user interaction. Applied game logic and data tracking to monitor score. I added simple css animations and used setTimeout to make the timing smooth.
