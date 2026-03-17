@@ -20,3 +20,9 @@ function createBoard() {
         gameBoard.appendChild(card);
     })
 }
+
+createBoard();
+
+
+let flippedCards = [];
+let lockBoard = false;
