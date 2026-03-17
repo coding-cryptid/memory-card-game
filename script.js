@@ -67,3 +67,11 @@ function checkMatch() {
         }, 1000);
     }
 }
+
+restartBtn.addEventListener("click", () => {
+    attempts = 0;
+    updateScore();
+    flippedCards = [];
+    lockBoard = false;
+    createBoard();
+});
