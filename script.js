@@ -48,3 +48,22 @@ function updateScore() {
 }
 
 updateScore();
+
+function checkMatch() {
+    const[card1, card2] = flippedCards;
+    attempts++;
+    updateScore();
+
+    if(card1.dataset.icon === card2.dataset.icon) {
+        flippedCards = [];
+        checkWin();
+    } else {
+        lockBoard = true;
+        setTimeout(() => {
+            card1.classList.remove("flipped");
+            card2.classList.remove("flipped");
+            flippedCards = [];
+            lockBoard = false;
+        }, 1000);
+    }
+}
