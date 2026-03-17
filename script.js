@@ -37,3 +37,14 @@ function flipCard() {
         checkMatch();
     }
 }
+
+let attempts = 0;
+
+const scoreDisplay = document.createElement("p");
+document.body.insertBefore(scoreDisplay, gameBoard);
+
+function updateScore() {
+    scoreDisplay.textContent = `Attempts: ${attempts}`;
+}
+
+updateScore();
