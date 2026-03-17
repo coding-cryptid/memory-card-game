@@ -75,3 +75,11 @@ restartBtn.addEventListener("click", () => {
     lockBoard = false;
     createBoard();
 });
+
+function checkWin() {
+    const allFlipped = [...document.querySelectorAll('.card')].every(card => card.classList.contains("flipped"));
+
+    if (allFlipped) {
+        setTimeout(() => alert(`You won in ${attempts} attempts!`), 300);
+    }
+}
