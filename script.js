@@ -26,3 +26,14 @@ createBoard();
 
 let flippedCards = [];
 let lockBoard = false;
+
+function flipCard() {
+    if(lockBoard || this.classList.contains("flipped")) return;
+
+    this.classList.add("flipped");
+    flippedCards.push(this);
+
+    if (flippedCards.length === 2) {
+        checkMatch();
+    }
+}
