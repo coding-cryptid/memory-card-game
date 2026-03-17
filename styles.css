@@ -29,5 +29,5 @@ body {
 .card.flipped {
     background: white;
     color: black;
-    transform: rotateY(100deg);
+    transform: rotateY(200deg);
 }
